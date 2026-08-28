@@ -1,6 +1,6 @@
 """
 Sama
-A front-facing astrology app. Sama is the Somali word for sky.
+A front-facing astrology app. Sama is the Arabic word for sky.
 
 Flow:
   1. Welcome and onboarding: name, birth date, exact time, place.
