@@ -28,6 +28,34 @@ import geo
 
 st.set_page_config(page_title="Sama", page_icon="*", layout="wide")
 
+# Sage Pathworks visual system: Streamlit controls the underlying component markup,
+# so this CSS intentionally focuses on stable global surfaces and typography.
+st.markdown("""
+<style>
+  :root { color-scheme: light; }
+  .stApp { background: #E7E0D1; color: #2B2926; }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', serif !important;
+    color: #211F1C !important;
+    letter-spacing: -0.02em;
+  }
+  p, label, button, input, textarea, [data-testid="stMarkdownContainer"] {
+    font-family: Inter, Arial, sans-serif;
+  }
+  [data-testid="stSidebar"] { background: #DED3BF; }
+  .stButton > button, .stDownloadButton > button {
+    border-radius: 8px;
+    border-color: #B85042;
+  }
+  .stButton > button[kind="primary"] {
+    background: #B85042;
+    color: #FFF9F2;
+  }
+  a { color: #9E4436 !important; }
+</style>
+""", unsafe_allow_html=True)
+
+
 CAVEAT = ("Sama is for reflection and entertainment. Astrology is an "
           "interpretive tradition, not a science, and nothing here predicts "
           "events. For decisions about money, health, or law, consult a "
