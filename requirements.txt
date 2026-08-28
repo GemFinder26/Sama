@@ -1,0 +1,5 @@
+pyswisseph
+streamlit
+openpyxl
+tzdata
+geonamescache
